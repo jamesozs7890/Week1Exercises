@@ -1,7 +1,6 @@
-# import math
-# import random
+import math
+import random
 
-"""
 print(math.floor(30.2))
 print(math.ceil(30.1))
 
@@ -56,7 +55,7 @@ guess = eval(input("Enter your guess between 1 and 10:"))
 if guess == num:
     print("You are right")
 else:
-    print("HA! Noob. The number is ", num)
+    print("HA! Noob. The number is ", num, "\n")
 
 # Exe 7
 while True:
@@ -87,12 +86,46 @@ while True:
 
 
 print("Converted value to 'min : sec' is ", abs(sec)//60, " : ", abs(sec) % 60)
-"""
 
 # Exe 9
 while True:
-    try:
-        hour = int(input("Enter current hour between 1 and 12:"))
+    hour = int(input("Enter current hour between 1 and 12:"))
+
+    if hour < 0 or hour > 12:
+        print("Try again")
+    else:
         break
-    except ValueError as e:
-        print("Ony accept integer value.")
+
+ahead = int(input("Enter the total hours ahead:"))
+
+newHour = int(hour + ahead)
+
+while True:
+    if newHour > 12:
+        newHour = newHour - 12
+    else:
+        break
+
+print("New hour = ", newHour, "o'clock\n")
+
+# Exe 10 a b
+num = int(input("Enter the value of power:"))
+
+powered = 2**num
+print("2 to the power of ", num, " is ", powered)
+print("The last digit of 2 to the power of ", num, " is ", powered % 10)
+print("The last 2 digits to the power of ", num, " is ", powered % 100, end="\n\n")
+
+# Exe 10 c
+num = int(input("Enter the value of power:"))
+digits = int(input("Number of last digits to be displayed:"))
+
+powered = 2**num
+
+print("2 to the power of ", num, " is ", powered)
+print("The last", digits, "digit of 2 to the power of ", num, " is ", powered % (10**digits))
+
+# Exe 11
+kg = float(input("Input your weight in kg:"))
+
+print("Your weight in pound(lbs) is ", round(kg*2.220, 2), "lbs")
