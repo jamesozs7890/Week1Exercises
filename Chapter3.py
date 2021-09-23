@@ -93,7 +93,6 @@ print("Converted value to 'min : sec' is ", abs(sec)//60, " : ", abs(sec) % 60)
 while True:
     try:
         hour = int(input("Enter current hour between 1 and 12:"))
-        ahead = int(input("Enter hours ahead:"))
         break
     except ValueError as e:
         print("Ony accept integer value.")
