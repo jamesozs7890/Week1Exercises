@@ -1,4 +1,4 @@
-import math
+"""import math
 import random
 
 print(math.floor(30.2))
@@ -47,15 +47,6 @@ y = (eval(input("Enter a number for y:")))
 
 print("The value for |x-y|/x+y =", (abs(x-y))/(x+y),end="\n\n")
 
-# if else
-num = random.randint(1, 10)
-
-guess = eval(input("Enter your guess between 1 and 10:"))
-
-if guess == num:
-    print("You are right")
-else:
-    print("HA! Noob. The number is ", num, "\n")
 
 # Exe 7
 while True:
@@ -85,7 +76,7 @@ while True:
         print("Ony accept integer value.")
 
 
-print("Converted value to 'min : sec' is ", abs(sec)//60, " : ", abs(sec) % 60)
+print("Converted value to 'min : sec' is ", abs(sec)//60, " : ", abs(sec) % 60)"""
 
 # Exe 9
 while True:
@@ -100,11 +91,8 @@ ahead = int(input("Enter the total hours ahead:"))
 
 newHour = int(hour + ahead)
 
-while True:
-    if newHour > 12:
-        newHour = newHour - 12
-    else:
-        break
+if newHour > 12:
+    newHour -= 12
 
 print("New hour = ", newHour, "o'clock\n")
 
