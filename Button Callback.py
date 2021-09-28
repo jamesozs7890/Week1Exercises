@@ -18,8 +18,8 @@ def reset():
 L1 = Label(text="0")
 L1.grid(row=0, column=0)
 
-B1 = Button(text="Button", command=callback())
-B2 = Button(text="Reset", command=reset())
+B1 = Button(text="Button", command=callback)
+B2 = Button(text="Reset", command=reset)
 B1.grid(row=1, column=0)
 B2.grid(row=2, column=0)
 

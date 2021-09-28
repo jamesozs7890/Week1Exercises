@@ -13,7 +13,7 @@ def obt():
 L1 = Label(text="Enter a text:")
 L2 = Label(text="0")
 E1 = Entry()
-B1 = Button(text="Enter", command=obt())
+B1 = Button(text="Enter", command=obt)
 
 L1.grid(row=0, column=0)
 L2.grid(row=3, column=1)
