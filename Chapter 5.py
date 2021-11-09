@@ -1,4 +1,4 @@
-import math
+"""import math
 from math import *
 
 # Exe 1
@@ -54,4 +54,30 @@ result = odd-even
 print("The final sum is:", result)
 
 print()
+
 # Exe 5
+num = eval(input("Enter a number to find the sum of division"))
+
+divisors = [1]
+
+for i in range(2, num):
+    if(num % i) == 0:
+        divisors.append(i)
+
+print("The sum of divisor", num, "is", sum(divisors))
+"""
+
+s = "Hello, how are you? I am under the water"
+count = 0
+
+#s = s[:6] + 'x' + s[7:]
+
+
+
+print(s.replace('f', 'x'))
+
+#for i in range(len(s)):
+#    if s[i] == 'e':
+#        count +=1
+#print(count)
+
